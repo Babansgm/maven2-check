@@ -3,15 +3,15 @@ node {
     deleteDir()
 
     try {
-        stage ('Clone') {
-            checkout scm
+        stage ('Job 1') {
+           echo "Job 1"
         }
-        stage ('Build') {
-            sh "echo 'hello.sh'"
+        stage ('Job 2') {
+             echo "'Job 2'"
         }
        
-        stage ('Deploy') {
-            sh "echo 'hello.sh'"
+        stage ('Job 3') {
+            echo "Job 3"
         }
     } catch (err) {
         currentBuild.result = 'FAILED'
