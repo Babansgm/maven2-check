@@ -7,7 +7,7 @@ node {
            echo "Job 1"
         }
         stage ('Job 2') {
-             echo "'Job 2'"
+             echo "Job 2"
         }
        
         stage ('Job 3') {
